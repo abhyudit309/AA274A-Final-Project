@@ -1,0 +1,27 @@
+<launch>
+  <arg name="sim" default="false"/>
+  <arg name = "v_max" default="0.2"/>
+  <arg name = "om_max" default="0.4"/>
+  <arg name = "controller_type" default="True"/>
+
+  <include file="$(find asl_turtlebot)/launch/root.launch">
+    <arg name="world" value="project_city" />
+    <arg name="x_pos" default="3.15"/>
+    <arg name="y_pos" default="1.6"/>
+    <arg name="z_pos" default="0.0"/>
+    <arg name="rviz" default="section4"/>
+    <arg name="model" default="asl_turtlebot"/>
+    <arg name="sim" default="$(arg sim)"/>
+  </include>
+  
+  <node pkg="asl_turtlebot" type="navigator.py" name="navigator" output="screen">
+     <param name = "v_max" value="$(arg v_max)"/>
+     <param name = "om_max" value="$(arg om_max)" />
+  </node>
+  
+  <node pkg="asl_turtlebot" type="multiplexer.py" name="multiplexer" output="screen">
+     <param name = "controller_type" value="$(arg controller_type)"/>
+  </node>
+  
+  <include file="$(find turtlebot3_teleop)/launch/turtlebot3_teleop_key.launch"/>
+</launch>
