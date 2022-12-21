@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="asl_turtlebot" type="navigator.py" name="navigator" />
+  <node pkg="section5" type="marker_pub.py" name="goal_visualization" />
+  <node type="rviz" name="rviz" pkg="rviz" args="-d $(find section5)/rviz/my_nav.rviz"/>
+</launch>
