@@ -70,8 +70,7 @@ confidence for detected objects.
 `scripts/utils/grids.py`: Used for motion planning. Performs collision checking on
 occupancy grids. grids.py functions/classes are used by scripts/navigator.py.
 
-`scripts/navigator.py`: Node that manages point to point robot navigation, uses
-your A\* implementation (HW2) in an MPC framework along with cubic spline
+`scripts/navigator.py`: Node that manages point to point robot navigation, uses RRT\* implementation in an MPC framework along with cubic spline
 interpolation and the differential flatness controller (from HW1), switching to
 the pose controller from HW1 when close to the goal.
 
