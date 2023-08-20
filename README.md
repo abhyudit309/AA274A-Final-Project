@@ -1,6 +1,6 @@
 # AA274A: Final Project
 
-See [`docs/AA274A Final Project Presentation.pdf`](docs/AA274A Final Project Presentation.pdf) for a description of the project implementation.
+See [`docs/AA274A Final Project Presentation.pdf`](https://github.com/abhyudit309/AA274A-Final-Project/blob/main/docs/AA274A%20Final%20Project%20Presentation.pdf) for a description of the project implementation.
 
 ## final project
 
