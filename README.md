@@ -1,13 +1,10 @@
 # AA274A: Final Project
 
 See [`docs/AA274A Final Project Presentation.pdf`](https://github.com/abhyudit309/AA274A-Final-Project/blob/main/docs/AA274A%20Final%20Project%20Presentation.pdf) for a description of the project implementation.
-
-Below are _brief_ descriptions of the code: 
-
+ 
 ## **File Descriptions:**
 
 ### Gazebo Simulation Files:
-----------------------
 
 `world/signs.world`: Defines 3D model stop sign testing environment.
 
@@ -19,7 +16,7 @@ representation of the final project environment.
 `world/arena.world`: Defines 3D model of the arena world. For HW4.
 
 ### Turtlebot Files:
-----------------------
+
 **Launch Files:**
 
 `launch/asl_turtlebot_core.launch`: Launches the core elements of the
