@@ -6,7 +6,7 @@ Below are _brief_ descriptions of the code:
 
 ## **File Descriptions:**
 
-**Gazebo Simulation Files:**
+### Gazebo Simulation Files:
 ----------------------
 
 `world/signs.world`: Defines 3D model stop sign testing environment.
@@ -18,7 +18,7 @@ representation of the final project environment.
 
 `world/arena.world`: Defines 3D model of the arena world. For HW4.
 
-**Turtlebot Files:**
+### Turtlebot Files:
 ----------------------
 **Launch Files:**
 
@@ -77,7 +77,7 @@ the pose controller from HW1 when close to the goal.
 `scripts/utils/utils.py`: Utility functions. Currently contains a wrapToPi
 function, but feel free to add to this.
 
-**Rviz Configurations:**
+### Rviz Configurations:
 
 **Cfg Files:**
 
@@ -86,7 +86,7 @@ navigator
 
 `cfg/gripper_control.yaml`: multiple variable configuration for the gripper
 
-***Files From HW***
+### Files From HW:
 
 scripts/controllers/ should contain `P1_pose_stabilization.py` and
 `P2_trajectory_tracking.py` from HW1 
@@ -95,7 +95,7 @@ scripts/planners/ should contain `P1_astar.py` from HW2
 
 scripts/ should contain the folder `HW4` from HW4`
 
-**Message Definitions:**
+### Message Definitions:
 
 `msg/DetectedObject.msg`: Custom message type that describes detected objects.
 Contains the following fields:
@@ -126,8 +126,7 @@ string[] objects - Array of strings corresponding to object names.
 
 DetectedObject[] ob_msgs - Array of DetectedObject objects.
 
-
-**Tensorflow Models:**
+### Tensorflow Models:
 
 The `.pb` files in the `tfmodels` folder are "frozen" neural network models, and
 contain both the structure and the weights of pretrained networks.
@@ -145,8 +144,7 @@ detection model
 zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
 for more.
 
-
-**Other:**
+### Other:
 
 `env_pi.sh`: Script to remote launch nodes on the raspberry pi from the jetson.
 This overcomes the need to ssh into the raspberry pi separately from the jetson
