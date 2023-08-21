@@ -141,7 +141,7 @@ detection model
 zoo](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md)
 for more.
 
-### Other:
+### Others:
 
 `env_pi.sh`: Script to remote launch nodes on the raspberry pi from the jetson.
 This overcomes the need to ssh into the raspberry pi separately from the jetson
